@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>+1 Evolution | Jeu de Clicker Ultime</title>
+    <meta name="description" content="Le clicker game le plus fluide et addictif. Améliorez votre puissance et dominez le score !">
+    <meta name="keywords" content="jeu, clicker, idle game, gratuit, divertissement">
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h1 style="display:none;">+1 Evolution : Le meilleur jeu de clicker minimaliste gratuit</h1>
+
+    <div id="score-display">0</div>
+    
+    <div id="frenzy-container">
+        <div id="frenzy-bar"></div>
+    </div>
+
+    <div class="top-nav">
+        <button id="mute-toggle" class="ui-btn">🔊</button>
+        <button id="stats-toggle" class="ui-btn">STATS</button>
+    </div>
+
+    <button id="main-btn">+1</button>
+
+    <div class="bottom-ui">
+        <div class="stats-bar">
+            CPS: <span id="cps">0</span> | FORCE: <span id="power">1</span> | MULTI: x<span id="multi-val">1.0</span>
+        </div>
+        
+        <div class="shop">
+            <button id="buy-auto" class="upgrade-btn">
+                <span>AUTO-CLICK</span>
+                <span class="price">Prix: <span id="cost-auto">10</span></span>
+            </button>
+            
+            <button id="buy-power" class="upgrade-btn">
+                <span>FORCE CLIC</span>
+                <span class="price">Prix: <span id="cost-power">50</span></span>
+            </button>
+
+            <button id="buy-multiplier" class="upgrade-btn gold">
+                <span>SUPER MULTI</span>
+                <span class="price">Prix: <span id="cost-multiplier">500</span></span>
+            </button>
+
+            <button id="buy-frenzy-boost" class="upgrade-btn red">
+                <span>ENDURANCE</span>
+                <span class="price">Prix: <span id="cost-frenzy">1000</span></span>
+            </button>
+        </div>
+    </div>
+
+    <div id="stats-modal" class="hidden">
+        <div class="modal-content">
+            <h2>STATISTIQUES</h2>
+            <div class="stat-row">Points Totaux : <span id="stat-total-ever">0</span></div>
+            <div class="stat-row">Clics Manuels : <span id="stat-clicks">0</span></div>
+            <div class="stat-row">Temps : <span id="stat-time">0</span>s</div>
+            <button id="close-stats" class="ui-btn">RETOURNER AU JEU</button>
+            <br>
+            <button id="reset-game" class="reset-link">Réinitialiser tout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
